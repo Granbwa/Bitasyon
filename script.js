@@ -1,4 +1,5 @@
-// Add event listener to the page load event
+// JavaScript for future enhancements
 window.addEventListener("load", function() {
-  console.log("Page loaded!");
+    console.log("Welcome to Bitasyon - Your Vision for Space Construction");
+    // Additional features can be added here
 });

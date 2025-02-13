@@ -1,143 +1,46 @@
-/*  Helios-Inspired Theme for Bitasyon  */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitasyon - Your Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* ------------------------------ */
-/*  1. General Styles             */
-/* ------------------------------ */
+    <header id="header">
+        <div class="container">
+            <h1>Bitasyon</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-html {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
+    <main id="content">
+        <div class="container">
+            <h2>Welcome to Bitasyon</h2>
+            <p>
+                This is the main content area of your website.  Replace this with your actual content.
+                You can add more sections, images, and other elements as needed.
+            </p>
+            <section>
+                <h3>A Section Heading</h3>
+                <p>More content here.</p>
+            </section>
+        </div>
+    </main>
 
-*, *:before, *:after {
-    box-sizing: inherit;  /* Inherit box-sizing from html */
-}
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2023 Bitasyon. All rights reserved.</p>
+        </div>
+    </footer>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
-    background: #282c34; /* Dark background */
-    color: #abb2bf;      /* Light text */
-    line-height: 1.6;    /* Improved readability */
-    margin: 0;
-    padding: 0;
-}
-
-/* Links */
-a {
-    color: #61afef; /* Helios link color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #98c379; /* Hover color */
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #e06c75; /* Helios Heading Color */
-    font-weight: 600;
-    margin-bottom: 0.5em;
-}
-
-/* ------------------------------ */
-/*  2. Layout Components          */
-/* ------------------------------ */
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header */
-#header {
-    background: #3e4451; /* Darker header */
-    padding: 1rem 0;      /* Reduce vertical padding */
-}
-
-#header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#header h1 {
-    font-size: 1.8em;   /* Slightly larger heading */
-    margin: 0;
-}
-
-/* Navigation */
-#nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-#nav li {
-    margin-left: 1.5rem; /* Increased spacing */
-}
-
-#nav a {
-    display: block;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-}
-
-#nav a:hover {
-    background-color: rgba(255, 255, 255, 0.05); /* Subtle hover effect */
-}
-
-/* Content */
-#content {
-    background: #282c34; /* Darker content area */
-    padding: 2rem 0;      /* Reduce vertical padding */
-}
-
-#content .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer */
-#footer {
-    background: #3e4451; /* Darker footer */
-    text-align: center;
-    padding: 1rem 0;       /* Reduce vertical padding */
-    font-size: 0.8em;
-    margin-top: 2rem;
-}
-
-/* ------------------------------ */
-/*  3. Responsive Design           */
-/* ------------------------------ */
-
-@media (max-width: 768px) {
-    /*  Adjustments for smaller screens  */
-
-    #header .container {
-        flex-direction: column;
-        align-items: flex-start; /* Align to the left */
-    }
-
-    #header h1 {
-        margin-bottom: 0.5rem; /* Add some spacing */
-    }
-
-    #nav ul {
-        flex-direction: column;
-    }
-
-    #nav li {
-        margin-left: 0;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* ------------------------------ */
-/*  4. Additional Styling          */
-/* ------------------------------ */
-
-/* Add any project-specific styling here */
+</body>
+</html>

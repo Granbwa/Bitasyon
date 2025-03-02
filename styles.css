@@ -14,8 +14,11 @@ header {
     justify-content: space-between;
 }
 header img {
-    margin-right: 1em;
+    margin-left: 1em;
+    height: 100px; /* Adjust the height as needed */
+    align-self: flex-start;
 }
+
 
 nav ul {
     list-style-type: none;

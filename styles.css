@@ -2,48 +2,46 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: #333;
+    background-color: #f8f8f8;
 }
+
 header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Change alignment to top */
-    text-align: center;
+    align-items: center;
 }
 
-header img {
-    margin-right: 1em;
-    height: 100px; /* Adjust the height as needed */
-    align-self: flex-start;
-}
-
-
-
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin: 0 1em;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header img {
+    height: 100px;
 }
 
 main {
     padding: 2em;
-    text-align: center;
 }
 
 section {
-    margin: 2em 0;
+    margin-bottom: 2em;
 }
 
 footer {
@@ -51,7 +49,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }

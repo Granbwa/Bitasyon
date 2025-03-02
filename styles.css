@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
 }
 header img {
-    margin-left: 1em;
+    margin-right: 1em;
     height: 100px; /* Adjust the height as needed */
     align-self: flex-start;
 }

@@ -17,7 +17,9 @@ header {
 header img {
     margin-right: 1em;
     height: 100px; /* Adjust the height as needed */
+    align-self: flex-start;
 }
+
 
 
 nav ul {

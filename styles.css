@@ -38,9 +38,11 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #ff6347;
 }
-
-header img {
+    header img {
     height: 100px;
+    filter: invert(1); /* Inverts the logo color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to the logo */
+}
 }
 
 main {

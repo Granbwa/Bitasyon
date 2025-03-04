@@ -1,60 +1,109 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Language toggle
-    const toggleButton = document.getElementById("lang-toggle");
-    toggleButton.addEventListener("click", function () {
-        let currentLang = document.documentElement.lang;
+document.addEventListener('DOMContentLoaded', function() {
+    // Language toggle button click event
+    const langToggle = document.getElementById('lang-toggle');
 
-        if (currentLang === 'en') {
-            document.documentElement.lang = 'fr'; // Switch to French
-            changeToFrench();
-        } else if (currentLang === 'fr') {
-            document.documentElement.lang = 'ht'; // Switch to Haitian Creole
-            changeToCreole();
+    langToggle.addEventListener('click', function() {
+        const currentLang = langToggle.innerText;
+
+        // Switch the language between English, French, and Kreyol
+        if (currentLang === "Fr | Kreyol") {
+            langToggle.innerText = "EN | English";
+            switchToFrenchKreyol();
         } else {
-            document.documentElement.lang = 'en'; // Switch to English
-            changeToEnglish();
+            langToggle.innerText = "Fr | Kreyol";
+            switchToEnglish();
         }
     });
 
-    function changeToEnglish() {
-        // English Content
-        document.querySelector('.lang-header').textContent = "Granbwa";
-        document.querySelector('.lang-tagline').textContent = "Your trusted partner in construction management and property oversight.";
-        document.querySelector('.lang-welcome').textContent = "Welcome to Granbwa";
-        document.querySelector('.lang-home-description').textContent = "Granbwa operates with precision, ensuring quality service in property management. We integrate construction experience with strategic operations, offering tailored property management solutions to meet the unique needs of each client.";
-        document.querySelector('.lang-about-header').textContent = "About Us";
-        document.querySelector('.lang-about-description').textContent = "Granbwa was founded on a commitment to delivering military-grade property management.";
-        document.querySelector('.lang-services-header').textContent = "Our Services";
-        document.querySelector('.lang-services-description').textContent = "We offer a comprehensive range of services tailored to your property management needs:";
-        document.querySelector('.lang-contact-header').textContent = "Contact Us";
-        document.querySelector('.lang-contact-description').textContent = "If you have any questions, or if you’re interested in learning more about how Granbwa can assist you, don’t hesitate to get in touch:";
+    // Function to change text to French/Kreyol
+    function switchToFrenchKreyol() {
+        document.querySelectorAll('.lang-home').forEach(function(el) {
+            el.innerText = 'Accueil';
+        });
+        document.querySelectorAll('.lang-about').forEach(function(el) {
+            el.innerText = 'À Propos';
+        });
+        document.querySelectorAll('.lang-services').forEach(function(el) {
+            el.innerText = 'Services';
+        });
+        document.querySelectorAll('.lang-contact').forEach(function(el) {
+            el.innerText = 'Contact';
+        });
+        document.querySelectorAll('.lang-header').forEach(function(el) {
+            el.innerText = 'Granbwa';
+        });
+        document.querySelectorAll('.lang-tagline').forEach(function(el) {
+            el.innerText = 'Votre partenaire de confiance en gestion de construction et de propriétés.';
+        });
+        document.querySelectorAll('.lang-welcome').forEach(function(el) {
+            el.innerText = 'Bienvenue à Granbwa';
+        });
+        document.querySelectorAll('.lang-home-description').forEach(function(el) {
+            el.innerText = 'Granbwa opère avec précision, assurant un service de qualité en gestion immobilière.';
+        });
+        document.querySelectorAll('.lang-about-header').forEach(function(el) {
+            el.innerText = 'À propos de nous';
+        });
+        document.querySelectorAll('.lang-about-description').forEach(function(el) {
+            el.innerText = 'Granbwa a été fondée avec l\'engagement de fournir une gestion immobilière de qualité militaire.';
+        });
+        document.querySelectorAll('.lang-services-header').forEach(function(el) {
+            el.innerText = 'Nos Services';
+        });
+        document.querySelectorAll('.lang-services-description').forEach(function(el) {
+            el.innerText = 'Nous offrons une gamme complète de services adaptés à vos besoins en gestion immobilière :';
+        });
+        document.querySelectorAll('.lang-ad-header').forEach(function(el) {
+            el.innerText = 'Exécutif en Construction - Services de Gestion Immobilière et Rénovation';
+        });
+        document.querySelectorAll('.lang-ad-description').forEach(function(el) {
+            el.innerText = 'Vous cherchez un professionnel de confiance pour gérer vos projets de construction et vos besoins immobiliers ? Granbwa offre des services spécialisés...';
+        });
     }
 
-    function changeToFrench() {
-        // French Content
-        document.querySelector('.lang-header').textContent = "Granbwa";
-        document.querySelector('.lang-tagline').textContent = "Votre partenaire de confiance dans la gestion de la construction et la surveillance immobilière.";
-        document.querySelector('.lang-welcome').textContent = "Bienvenue à Granbwa";
-        document.querySelector('.lang-home-description').textContent = "Granbwa opère avec précision, garantissant un service de qualité dans la gestion immobilière. Nous intégrons l'expérience de la construction avec des opérations stratégiques, offrant des solutions de gestion immobilière adaptées aux besoins uniques de chaque client.";
-        document.querySelector('.lang-about-header').textContent = "À Propos de Nous";
-        document.querySelector('.lang-about-description').textContent = "Granbwa a été fondée avec l'engagement de fournir une gestion immobilière de qualité militaire.";
-        document.querySelector('.lang-services-header').textContent = "Nos Services";
-        document.querySelector('.lang-services-description').textContent = "Nous offrons une gamme complète de services adaptés à vos besoins en gestion immobilière :";
-        document.querySelector('.lang-contact-header').textContent = "Contactez-Nous";
-        document.querySelector('.lang-contact-description').textContent = "Si vous avez des questions ou si vous souhaitez en savoir plus sur la manière dont Granbwa peut vous aider, n'hésitez pas à nous contacter :";
-    }
-
-    function changeToCreole() {
-        // Haitian Creole Content
-        document.querySelector('.lang-header').textContent = "Granbwa";
-        document.querySelector('.lang-tagline').textContent = "Patnè ou fè konfyans nan jere konstriksyon ak siveyans pwopriyete.";
-        document.querySelector('.lang-welcome').textContent = "Byenveni nan Granbwa";
-        document.querySelector('.lang-home-description').textContent = "Granbwa opere avèk presizyon, asire sèvis kalite nan jesyon pwopriyete. Nou entegre eksperyans konstriksyon ak operasyon estratejik, ofri solisyon jesyon pwopriyete adapte pou satisfè bezwen inik chak kliyan.";
-        document.querySelector('.lang-about-header').textContent = "Sou Nou";
-        document.querySelector('.lang-about-description').textContent = "Granbwa te fonde sou yon angajman pou bay jesyon pwopriyete nan nivo militè.";
-        document.querySelector('.lang-services-header').textContent = "Sèvis Nou";
-        document.querySelector('.lang-services-description').textContent = "Nou ofri yon seri sèvis konplè adapte pou bezwen jesyon pwopriyete ou yo :";
-        document.querySelector('.lang-contact-header').textContent = "Kontakte Nou";
-        document.querySelector('.lang-contact-description').textContent = "Si ou gen nenpòt kesyon, oswa si ou enterese aprann plis sou fason Granbwa ka ede ou, pa ezite kontakte nou:";
+    // Function to switch back to English
+    function switchToEnglish() {
+        document.querySelectorAll('.lang-home').forEach(function(el) {
+            el.innerText = 'Home';
+        });
+        document.querySelectorAll('.lang-about').forEach(function(el) {
+            el.innerText = 'About';
+        });
+        document.querySelectorAll('.lang-services').forEach(function(el) {
+            el.innerText = 'Services';
+        });
+        document.querySelectorAll('.lang-contact').forEach(function(el) {
+            el.innerText = 'Contact';
+        });
+        document.querySelectorAll('.lang-header').forEach(function(el) {
+            el.innerText = 'Granbwa';
+        });
+        document.querySelectorAll('.lang-tagline').forEach(function(el) {
+            el.innerText = 'Your trusted partner in construction management and property oversight.';
+        });
+        document.querySelectorAll('.lang-welcome').forEach(function(el) {
+            el.innerText = 'Welcome to Granbwa';
+        });
+        document.querySelectorAll('.lang-home-description').forEach(function(el) {
+            el.innerText = 'Granbwa operates with precision, ensuring quality service in property management.';
+        });
+        document.querySelectorAll('.lang-about-header').forEach(function(el) {
+            el.innerText = 'About Us';
+        });
+        document.querySelectorAll('.lang-about-description').forEach(function(el) {
+            el.innerText = 'Granbwa was founded on a commitment to delivering military-grade property management.';
+        });
+        document.querySelectorAll('.lang-services-header').forEach(function(el) {
+            el.innerText = 'Our Services';
+        });
+        document.querySelectorAll('.lang-services-description').forEach(function(el) {
+            el.innerText = 'We offer a comprehensive range of services tailored to your property management needs:';
+        });
+        document.querySelectorAll('.lang-ad-header').forEach(function(el) {
+            el.innerText = 'Construction Executive - Property Management and Renovation Services';
+        });
+        document.querySelectorAll('.lang-ad-description').forEach(function(el) {
+            el.innerText = 'Looking for a trusted professional to manage your construction projects and property needs? Granbwa offers specialized services...';
+        });
     }
 });

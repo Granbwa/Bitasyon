@@ -1,84 +1,91 @@
-/* Reset some basic styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
     color: #333;
 }
 
-/* Header */
-header {
+h1, h2, p {
     text-align: center;
-    padding: 50px 0;
-    background: #333;
-    color: #fff;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    color: #fff;
 }
 
 p {
     font-size: 1.2rem;
 }
 
-/* Language specific class, hide non-active languages */
-.lang-fr, .lang-en, .lang-kreyo {
-    display: none;
+/* Header */
+#header {
+    background: #333;
+    padding: 60px 20px;
 }
 
-.lang-fr.active, .lang-en.active, .lang-kreyo.active {
-    display: block;
-}
-
-/* Navigation */
-nav ul {
+#header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    margin-bottom: 20px;
 }
 
-nav ul li {
+#header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+#header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
     padding: 10px;
-    display: inline-block;
+    font-size: 1.1rem;
 }
 
-nav ul li a:hover {
+#header nav ul li a:hover {
     background-color: #575757;
 }
 
-/* Section Styling */
+.lang-toggle {
+    background-color: #444;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.lang-toggle:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
 section {
     padding: 40px 20px;
-    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     color: #333;
+    margin-bottom: 20px;
 }
 
 /* Service List */
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -88,55 +95,41 @@ ul li {
 }
 
 /* Footer */
-footer {
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
 }
 
-/* Language Toggle */
-.lang-toggle {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    margin: 20px 0;
+.lang-footer {
+    font-size: 1rem;
 }
 
-.lang-toggle:hover {
-    background-color: #575757;
+/* Hide elements initially */
+.lang-fr, .lang-en {
+    display: none;
+}
+
+.lang-fr.active, .lang-en.active {
+    display: block;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        padding: 30px 0;
+    #header {
+        padding: 30px 20px;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     section {
         padding: 30px 10px;
     }
 
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-    }
-
-    .lang-toggle {
-        font-size: 1rem;
+    .container {
+        padding: 0 10px;
     }
 }

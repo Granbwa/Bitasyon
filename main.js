@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const langToggleButton = document.getElementById('lang-toggle');
     const langFr = document.querySelectorAll('.lang-fr');
     const langEn = document.querySelectorAll('.lang-en');

@@ -3,112 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granbwa - Construction Executive</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Experience a unique and rare design at Granbwa. Learn more about our journey, mission, services, and get in touch with us." />
-    <meta name="robots" content="max-image-preview:large" />
-    <link rel="canonical" href="https://granbwa.com/" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Granbwa - Construction Executive" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Granbwa - Granbwa" />
-    <meta property="og:description" content="Experience a unique and rare design at Granbwa. Learn more about our journey, mission, services, and get in touch with us." />
-    <meta property="og:url" content="https://granbwa.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Granbwa" />
-    <meta name="twitter:description" content="Experience a unique and rare design at Granbwa. Learn more about our journey, mission, services, and get in touch with us." />
+    <meta name="description" content="Granbwa offers professional construction and property management services, with an emphasis on tailored solutions for clients.">
+    <title>Granbwa - Executive Construction & Property Management Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin: 40px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #fff;
+            border: 1px solid #e3e3e3;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-info a {
+            color: #1c87c9;
+            text-decoration: none;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .services-list {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .service {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home" class="lang-home">Home</a></li>
-                <li><a href="#about" class="lang-about">About</a></li>
-                <li><a href="#services" class="lang-services">Services</a></li>
-                <li><a href="#contact" class="lang-contact">Contact</a></li>
-                <li><a href="#" id="lang-toggle" class="lang-toggle">Fr | Kreyol</a></li>
-            </ul>
-        </nav>
-        <h1 class="lang-header">Granbwa</h1>
-        <p class="lang-tagline">Your trusted partner in construction management and property oversight.</p>
-    </header>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <h2 class="lang-welcome">Welcome to Granbwa</h2>
-            <p class="lang-home-description">Granbwa operates with precision, ensuring quality service in property management. We integrate construction experience with strategic operations, offering tailored property management solutions to meet the unique needs of each client.</p>
-        </section>
+<header>
+    <h1>Granbwa</h1>
+    <p>Your trusted partner in construction management and property oversight</p>
+</header>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="lang-about-header">About Us</h2>
-            <p class="lang-about-description">Granbwa was founded on a commitment to delivering military-grade property management. We specialize in working with property owners and investors, offering innovative solutions that maximize property value while maintaining the highest standards of quality and security.</p>
-            <p class="lang-about-description">With decades of experience in construction and property management, our team integrates strategic foresight with hands-on expertise to meet diverse needs, from residential to commercial and beyond.</p>
-        </section>
+<section>
+    <h2>Our Services / Nos Services / Sèvis Nou Ofri</h2>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2 class="lang-services-header">Our Services</h2>
-            <p class="lang-services-description">We offer a comprehensive range of services tailored to your property management needs:</p>
-            <ul>
-                <li class="lang-service-item"><strong>Property Management:</strong> Professional management for residential, commercial, and industrial properties, ensuring efficiency and profitability.</li>
-                <li class="lang-service-item"><strong>Construction Management:</strong> Full-service management for construction projects, from planning to execution, ensuring that every project is delivered on time and within budget.</li>
-                <li class="lang-service-item"><strong>Facility Maintenance:</strong> Ongoing maintenance services to ensure your properties are always in top condition, reducing downtime and repair costs.</li>
-                <li class="lang-service-item"><strong>Security Solutions:</strong> Integrated security services for all types of properties, from surveillance systems to on-site security personnel, ensuring maximum safety.</li>
-                <li class="lang-service-item"><strong>Tenant Relations:</strong> We handle tenant communications, lease negotiations, and conflict resolution, ensuring both tenant satisfaction and landlord profitability.</li>
-                <li class="lang-service-item"><strong>Emergency Response Services:</strong> Our team is available 24/7 to handle urgent property issues, from natural disasters to building emergencies.</li>
-            </ul>
-        </section>
+    <div class="services-list">
+        <div class="service">
+            <h3>Property Management / Gestion de Propriété / Jesyon Pwopriyete</h3>
+            <p>Residential, commercial, and industrial property management tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h3>Construction Management / Gestion de la Construction / Jesyon Konstriksyon</h3>
+            <p>Comprehensive construction project management from start to finish.</p>
+        </div>
+        <div class="service">
+            <h3>Specialized Trades / Métiers Spécialisés / Metye Espesyalize</h3>
+            <p>Expert carpentry, masonry, electrical, plumbing, HVAC, and more.</p>
+        </div>
+        <div class="service">
+            <h3>Security Solutions / Solutions de Sécurité / Solisyon Sekirite</h3>
+            <p>Integrated security systems and on-site personnel to ensure safety.</p>
+        </div>
+        <div class="service">
+            <h3>Tenant Relations / Relations avec les Locataires / Relasyon Lokatè</h3>
+            <p>Manage tenant communications, lease negotiations, and conflict resolution.</p>
+        </div>
+        <div class="service">
+            <h3>Emergency Services / Services d'Urgence / Sèvis Ijans</h3>
+            <p>24/7 response for urgent property issues like structural damage and more.</p>
+        </div>
+    </div>
+</section>
 
-        <!-- Construction Executive Ad Section -->
-        <section id="construction-ad">
-            <h2 class="lang-ad-header">Exécutif en Construction - Services de Gestion Immobilière et Rénovation</h2>
-            <p class="lang-ad-description">Vous cherchez un professionnel de confiance pour gérer vos projets de construction et vos besoins immobiliers ? Granbwa offre des services spécialisés pour rendre vos projets plus fluides et efficaces, que vous gériez une propriété ou que vous travailliez sur un projet de construction.</p>
+<section class="contact-info">
+    <h2>Contact Us / Contactez-nous / Kontakte nou</h2>
+    <p>Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
+    <p>Phone: +1-263-588-7060</p>
+    <p>Visit: <a href="https://granbwa.com" target="_blank">granbwa.com</a></p>
+</section>
 
-            <h3>Nos Services :</h3>
-            <ul>
-                <li><strong>Contractant Général</strong> - Gestion complète de vos projets de construction.</li>
-                <li><strong>Métiers Spécialisés</strong> - Menuiserie, Maçonnerie, Plomberie, Électricité, et plus.</li>
-                <li><strong>Gestion Immobilière</strong> - Services complets incluant maintenance, gestion des locataires, et plus.</li>
-            </ul>
+<footer>
+    <p>&copy; 2025 Granbwa. All rights reserved.</p>
+</footer>
 
-            <h3>Tarifs :</h3>
-            <h4>Gestion Immobilière</h4>
-            <ul>
-                <li><strong>Frais de Gestion</strong>: 5 à 8 % des revenus locatifs ou 500 $ à 2 000 $ par mois par propriété.</li>
-                <li><strong>Transport des Matériaux</strong>: À partir de 50 $ par trajet, selon la distance et la quantité.</li>
-                <li><strong>Maintenance & Réparations</strong>: À partir de 75 $ de l'heure.</li>
-            </ul>
-
-            <h4>Rénovation et Construction</h4>
-            <ul>
-                <li><strong>Tarif Horaire</strong>: 60 $ à 90 $ de l'heure pour les métiers spécialisés.</li>
-                <li><strong>Forfait Rénovation + Gestion Immobilière</strong>: Tarifs augmentés de 10-15% pour les projets incluant la gestion immobilière.</li>
-            </ul>
-
-            <p><strong>Pourquoi Choisir Granbwa?</strong></p>
-            <ul>
-                <li><strong>Gestion efficace des projets</strong> - Complètement pris en charge, garantissant le respect des délais et des normes de qualité.</li>
-                <li><strong>Accès aux métiers spécialisés</strong> - Menuisiers, maçons, plombiers, et plus pour garantir l'achèvement complet du projet.</li>
-                <li><strong>Engagement social</strong> - 2.5% de mes profits peuvent être donnés à une organisation à but non lucratif de votre choix.</li>
-            </ul>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="lang-contact-header">Contact Us</h2>
-            <p class="lang-contact-description">If you have any questions, or if you’re interested in learning more about how Granbwa can assist you, don’t hesitate to get in touch:</p>
-            <p>Email: <a href="mailto:info@granbwa.com" class="lang-email">info@granbwa.com</a></p>
-            <p>Phone: <span class="lang-phone">+1-234-567-890</span></p>
-            <p>Address: <span class="lang-address">1234 Granbwa Street, City, Country</span></p>
-        </section>
-    </main>
-
-    <footer>
-        <p class="lang-footer">&copy; 2025 Granbwa. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>

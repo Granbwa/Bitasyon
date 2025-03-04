@@ -3,104 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Granbwa offers professional construction and property management services, with an emphasis on tailored solutions for clients.">
-    <title>Granbwa - Executive Construction & Property Management Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <title>Granbwa - Executive en Construction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="is-preload">
 
-<header>
-    <h1 class="lang-fr">Granbwa</h1>
-    <h1 class="lang-en" style="display: none;">Granbwa</h1>
-    <h1 class="lang-kreyo" style="display: none;">Granbwa</h1>
-    <p class="lang-fr">Votre partenaire de confiance dans la gestion de la construction et de la propriété.</p>
-    <p class="lang-en" style="display: none;">Your trusted partner in construction management and property oversight.</p>
-    <p class="lang-kreyo" style="display: none;">Patnè ou nan jesyon konstriksyon ak pwopriyete.</p>
-</header>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#home" class="lang-home">Accueil</a></li>
+                <li><a href="#about" class="lang-about">À propos</a></li>
+                <li><a href="#services" class="lang-services">Services</a></li>
+                <li><a href="#contact" class="lang-contact">Contact</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-toggle">Fr | En</a></li>
+            </ul>
+        </nav>
+        <h1 class="lang-header">Granbwa</h1>
+        <p class="lang-tagline">Votre partenaire de confiance en gestion de construction et de propriété.</p>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#home" class="lang-en">Home</a></li>
-        <li><a href="#about" class="lang-en">About</a></li>
-        <li><a href="#services" class="lang-en">Services</a></li>
-        <li><a href="#contact" class="lang-en">Contact</a></li>
-        <li><a href="#" id="lang-toggle" class="lang-toggle lang-en">Fr | Kreyol</a></li>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <h2 class="lang-welcome">Bienvenue chez Granbwa</h2>
+                <p class="lang-home-description">Granbwa fonctionne avec précision, garantissant un service de qualité dans la gestion de propriété. Nous intégrons l'expérience de la construction avec des opérations stratégiques pour offrir des solutions personnalisées de gestion de propriété adaptées aux besoins uniques de chaque client.</p>
+            </div>
+        </section>
 
-        <li><a href="#home" class="lang-fr" style="display: none;">Accueil</a></li>
-        <li><a href="#about" class="lang-fr" style="display: none;">À propos</a></li>
-        <li><a href="#services" class="lang-fr" style="display: none;">Services</a></li>
-        <li><a href="#contact" class="lang-fr" style="display: none;">Contact</a></li>
-        <li><a href="#" id="lang-toggle" class="lang-toggle lang-fr" style="display: none;">En | Kreyol</a></li>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="lang-about-header">À propos de nous</h2>
+                <p class="lang-about-description">Granbwa a été fondée sur un engagement à fournir une gestion de propriété de qualité militaire. Nous nous spécialisons dans la collaboration avec les propriétaires de biens et les investisseurs pour offrir des solutions innovantes visant à maximiser la valeur des propriétés tout en maintenant les plus hauts standards de qualité et de sécurité.</p>
+            </div>
+        </section>
 
-        <li><a href="#home" class="lang-kreyo" style="display: none;">Akèy</a></li>
-        <li><a href="#about" class="lang-kreyo" style="display: none;">Sou nou</a></li>
-        <li><a href="#services" class="lang-kreyo" style="display: none;">Sèvis</a></li>
-        <li><a href="#contact" class="lang-kreyo" style="display: none;">Kontakte nou</a></li>
-        <li><a href="#" id="lang-toggle" class="lang-toggle lang-kreyo" style="display: none;">Fr | En</a></li>
-    </ul>
-</nav>
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2 class="lang-services-header">Nos services</h2>
+                <ul>
+                    <li class="lang-service-item"><strong>Gestion de propriété :</strong> Gestion professionnelle pour les propriétés résidentielles, commerciales et industrielles, garantissant efficacité et rentabilité.</li>
+                    <li class="lang-service-item"><strong>Gestion de construction :</strong> Gestion complète des projets de construction, de la planification à l'exécution, garantissant la livraison dans les délais et le respect du budget.</li>
+                    <li class="lang-service-item"><strong>Maintenance des installations :</strong> Services de maintenance continus pour garantir que vos propriétés sont toujours en parfait état, réduisant ainsi les coûts de réparation.</li>
+                    <li class="lang-service-item"><strong>Solutions de sécurité :</strong> Services de sécurité intégrés pour tous types de propriétés, de la surveillance vidéo à la sécurité sur site, garantissant une sécurité maximale.</li>
+                    <li class="lang-service-item"><strong>Relations avec les locataires :</strong> Nous gérons les communications avec les locataires, les négociations de baux et la résolution des conflits, garantissant à la fois la satisfaction des locataires et la rentabilité des propriétaires.</li>
+                </ul>
+            </div>
+        </section>
 
-<section id="home">
-    <h2 class="lang-fr">Bienvenue chez Granbwa</h2>
-    <h2 class="lang-en" style="display: none;">Welcome to Granbwa</h2>
-    <h2 class="lang-kreyo" style="display: none;">Byenveni nan Granbwa</h2>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="lang-contact-header">Contactez-nous</h2>
+                <p class="lang-contact-description">Si vous avez des questions, ou si vous souhaitez en savoir plus sur la manière dont Granbwa peut vous assister, n'hésitez pas à nous contacter :</p>
+                <p>Email: <a href="mailto:info@granbwa.com" class="lang-email">info@granbwa.com</a></p>
+                <p>Téléphone: <span class="lang-phone">+1-234-567-890</span></p>
+                <p>Adresse: <span class="lang-address">1234 Granbwa Street, Ville, Pays</span></p>
+            </div>
+        </section>
+    </main>
 
-    <p class="lang-fr">Granbwa est un partenaire de confiance pour la gestion de la construction et des propriétés. Nous nous spécialisons dans la gestion immobilière et les services de gestion de la construction pour garantir la rentabilité et l'efficacité de vos investissements.</p>
-    <p class="lang-en" style="display: none;">Granbwa is your trusted partner in construction management and property oversight. We specialize in property management and construction management services to ensure the profitability and efficiency of your investments.</p>
-    <p class="lang-kreyo" style="display: none;">Granbwa se patnè ou nan jesyon konstriksyon ak pwopriyete. Nou espesyalize nan jesyon pwopriyete ak sèvis jesyon konstriksyon pou asire rentabilité ak efikasite envestisman ou yo.</p>
-</section>
-
-<section id="about">
-    <h2 class="lang-fr">À propos de nous</h2>
-    <h2 class="lang-en" style="display: none;">About Us</h2>
-    <h2 class="lang-kreyo" style="display: none;">Sou nou</h2>
-
-    <p class="lang-fr">Granbwa a été fondée sur un engagement à offrir une gestion de propriétés de qualité militaire. Nous travaillons avec les propriétaires et les investisseurs pour offrir des solutions novatrices visant à maximiser la valeur des propriétés tout en maintenant les normes de qualité et de sécurité les plus élevées.</p>
-    <p class="lang-en" style="display: none;">Granbwa was founded on a commitment to delivering military-grade property management. We work with property owners and investors to provide innovative solutions that maximize property value while maintaining the highest standards of quality and security.</p>
-    <p class="lang-kreyo" style="display: none;">Granbwa te fonde sou yon angajman pou ofri jesyon pwopriyete ki gen kalite militè. Nou travay ak pwopriyetè ak envestisè pou ofri solisyon inovatè ki maksimize valè pwopriyete yo pandan n ap kenbe pi gwo estanda kalite ak sekirite.</p>
-</section>
-
-<section id="services">
-    <h2 class="lang-fr">Nos Services</h2>
-    <h2 class="lang-en" style="display: none;">Our Services</h2>
-    <h2 class="lang-kreyo" style="display: none;">Sèvis Nou Ofri</h2>
-
-    <ul>
-        <li class="lang-fr">
-            <strong>Gestion de propriété</strong> : Gestion professionnelle de propriétés résidentielles, commerciales et industrielles.
-        </li>
-        <li class="lang-en" style="display: none;">
-            <strong>Property Management</strong>: Professional management for residential, commercial, and industrial properties.
-        </li>
-        <li class="lang-kreyo" style="display: none;">
-            <strong>Jesyon Pwopriyete</strong>: Jesyon pwofesyonèl pou pwopriyete rezidansyèl, komèsyal, ak endistriyèl.
-        </li>
-        <!-- Add other services here similarly -->
-    </ul>
-</section>
-
-<section id="contact">
-    <h2 class="lang-fr">Contactez-nous</h2>
-    <h2 class="lang-en" style="display: none;">Contact Us</h2>
-    <h2 class="lang-kreyo" style="display: none;">Kontakte nou</h2>
-
-    <p class="lang-fr">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
-    <p class="lang-en" style="display: none;">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
-    <p class="lang-kreyo" style="display: none;">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
-    
-    <p class="lang-fr">Téléphone: +1-263-588-7060</p>
-    <p class="lang-en" style="display: none;">Phone: +1-263-588-7060</p>
-    <p class="lang-kreyo" style="display: none;">Telefòn: +1-263-588-7060</p>
-</section>
-
-<footer>
-    <p class="lang-fr">&copy; 2025 Granbwa. Tous droits réservés.</p>
-    <p class="lang-en" style="display: none;">&copy; 2025 Granbwa. All rights reserved.</p>
-    <p class="lang-kreyo" style="display: none;">&copy; 2025 Granbwa. Tout dwa rezève.</p>
-</footer>
-
-<script src="scripts.js"></script>
+    <footer id="footer">
+        <div class="container">
+            <p class="lang-footer">&copy; 2025 Granbwa. Tous droits réservés.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

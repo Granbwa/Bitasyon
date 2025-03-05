@@ -36,6 +36,30 @@
             font-weight: 300;
         }
 
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .lang-toggle button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .lang-toggle button.active {
+            background-color: #555;
+        }
+
+        .lang-toggle button:not(.active):hover {
+            background-color: #666;
+        }
+
         section {
             margin: 40px 10%;
         }
@@ -133,8 +157,10 @@
     <p class="lang-fr">Votre partenaire de confiance en gestion de construction et en supervision de propriétés</p>
     <p class="lang-en" style="display:none;">Your trusted partner in construction management and property oversight</p>
     <p class="lang-ht" style="display:none;">Patnè ou fè konfyans nan jesyon konstriksyon ak siveyans pwopriyete</p>
-    <div class="language-toggle">
-        <button id="lang-toggle">Fr | Kreyol</button>
+    <div class="lang-toggle">
+        <button id="lang-fr" class="active">Fr</button>
+        <button id="lang-en">En</button>
+        <button id="lang-ht">Kreyol</button>
     </div>
 </header>
 
@@ -221,7 +247,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const langToggle = document.getElementById('lang-toggle');
+        const langButtons = document.querySelectorAll('.lang-toggle button');
         const langElements = document.querySelectorAll('[class^="lang-"]');
         let currentLang = 'fr'; // Default language is French
 
@@ -234,25 +260,20 @@
                 }
             });
 
-            // Update button text
-            if (lang === 'fr') {
-                langToggle.textContent = 'En | Kreyol';
-            } else if (lang === 'en') {
-                langToggle.textContent = 'Fr | Kreyol';
-            } else {
-                langToggle.textContent = 'Fr | En';
-            }
+            langButtons.forEach(button => {
+                if (button.id === `lang-${lang}`) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
         }
 
-        langToggle.addEventListener('click', function() {
-            if (currentLang === 'fr') {
-                currentLang = 'en';
-            } else if (currentLang === 'en') {
-                currentLang = 'ht';
-            } else {
-                currentLang = 'fr';
-            }
-            showLanguage(currentLang);
+        langButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                currentLang = this.id.split('-')[1];
+                showLanguage(currentLang);
+            });
         });
 
         showLanguage(currentLang); // Initialize with French content

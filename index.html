@@ -1,6 +1,223 @@
-<div class="language-toggle">
-    <button id="lang-toggle">Fr | Kreyol</button>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domaine Granbwa offers professional construction and property management services, with an emphasis on tailored solutions for clients.">
+    <title>Domaine Granbwa - Executive Construction & Property Management Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        header {
+            background-color: #000; /* Black */
+            color: #fff; /* White */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #888; /* Gray color for title */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin: 40px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000; /* Black for titles */
+        }
+
+        /* Services Section */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #fff; /* White background for cards */
+            border: 1px solid #ccc; /* Light gray border */
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000; /* Black text for service titles */
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #666; /* Lighter gray text for descriptions */
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-info a {
+            color: #666; /* Gray for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000; /* Black footer color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 768px) {
+            .services-list {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .service {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Domaine Granbwa</h1>
+    <p class="lang-fr">Votre partenaire de confiance en gestion de construction et en supervision de propriétés</p>
+    <p class="lang-en" style="display:none;">Your trusted partner in construction management and property oversight</p>
+    <p class="lang-ht" style="display:none;">Patnè ou fè konfyans nan jesyon konstriksyon ak siveyans pwopriyete</p>
+    <div class="language-toggle">
+        <button id="lang-toggle">Fr | Kreyol</button>
+    </div>
+</header>
+
+<section>
+    <h2 class="lang-fr">Nos Services</h2>
+    <h2 class="lang-en" style="display:none;">Our Services</h2>
+    <h2 class="lang-ht" style="display:none;">Sèvis Nou Ofri</h2>
+
+    <div class="services-list">
+        <div class="service">
+            <h3 class="lang-fr">Gestion de Propriété</h3>
+            <h3 class="lang-en" style="display:none;">Property Management</h3>
+            <h3 class="lang-ht" style="display:none;">Jesyon Pwopriyete</h3>
+            <p class="lang-fr">Gestion de propriétés résidentielles, commerciales et industrielles, adaptée à vos besoins.</p>
+            <p class="lang-en" style="display:none;">Residential, commercial, and industrial property management tailored to your needs.</p>
+            <p class="lang-ht" style="display:none;">Jesyon pwopriyete rezidansyèl, komèsyal, ak endistriyèl, adapte a bezwen ou yo.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Gestion de la Construction</h3>
+            <h3 class="lang-en" style="display:none;">Construction Management</h3>
+            <h3 class="lang-ht" style="display:none;">Jesyon Konstriksyon</h3>
+            <p class="lang-fr">Gestion complète des projets de construction, de la planification à l'exécution.</p>
+            <p class="lang-en" style="display:none;">Comprehensive construction project management from start to finish.</p>
+            <p class="lang-ht" style="display:none;">Jesyon pwojè konstriksyon soti nan kòmansman jouk nan fen.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Métiers Spécialisés</h3>
+            <h3 class="lang-en" style="display:none;">Specialized Trades</h3>
+            <h3 class="lang-ht" style="display:none;">Metye Espesyalize</h3>
+            <p class="lang-fr">Expertise en menuiserie, maçonnerie, électricité, plomberie, CVC, et plus encore.</p>
+            <p class="lang-en" style="display:none;">Expert carpentry, masonry, electrical, plumbing, HVAC, and more.</p>
+            <p class="lang-ht" style="display:none;">Ekspètiz nan travay bwa, maçonnerie, elektrik, plonbri, HVAC, ak plis.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Solutions de Sécurité</h3>
+            <h3 class="lang-en" style="display:none;">Security Solutions</h3>
+            <h3 class="lang-ht" style="display:none;">Solisyon Sekirite</h3>
+            <p class="lang-fr">Systèmes de sécurité intégrés et personnel sur site pour garantir la sécurité.</p>
+            <p class="lang-en" style="display:none;">Integrated security systems and on-site personnel to ensure safety.</p>
+            <p class="lang-ht" style="display:none;">Sistèm sekirite entegre ak pèsonèl sou plas pou asire sekirite.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Relations avec les Locataires</h3>
+            <h3 class="lang-en" style="display:none;">Tenant Relations</h3>
+            <h3 class="lang-ht" style="display:none;">Relasyon Lokatè</h3>
+            <p class="lang-fr">Gestion des communications avec les locataires, des négociations de baux et de la résolution des conflits.</p>
+            <p class="lang-en" style="display:none;">Manage tenant communications, lease negotiations, and conflict resolution.</p>
+            <p class="lang-ht" style="display:none;">Jere kominikasyon lokatè, negosyasyon kontra lokasyon, ak rezolisyon konfli.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Services d'Urgence</h3>
+            <h3 class="lang-en" style="display:none;">Emergency Services</h3>
+            <h3 class="lang-ht" style="display:none;">Sèvis Ijans</h3>
+            <p class="lang-fr">Réponse 24h/24 et 7j/7 pour les problèmes urgents liés à la propriété, tels que les dommages structurels, etc.</p>
+            <p class="lang-en" style="display:none;">24/7 response for urgent property issues like structural damage and more.</p>
+            <p class="lang-ht" style="display:none;">Repons 24/7 pou pwoblèm ijans pwopriyete tankou domaj estriktirèl ak plis.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2 class="lang-fr">Contactez-nous</h2>
+    <h2 class="lang-en" style="display:none;">Contact Us</h2>
+    <h2 class="lang-ht" style="display:none;">Kontakte nou</h2>
+
+    <p class="lang-fr">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
+    <p class="lang-en" style="display:none;">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
+    <p class="lang-ht" style="display:none;">Email: <a href="mailto:co@granbwa.com">co@granbwa.com</a></p>
+
+    <p class="lang-fr">Téléphone: +1-263-588-7060</p>
+    <p class="lang-en" style="display:none;">Phone: +1-263-588-7060</p>
+    <p class="lang-ht" style="display:none;">Telefòn: +1-263-588-7060</p>
+
+    <p class="lang-fr">Visitez: <a href="https://www.granbwa.com" target="_blank">www.granbwa.com</a></p>
+    <p class="lang-en" style="display:none;">Visit: <a href="https://www.granbwa.com" target="_blank">www.granbwa.com</a></p>
+    <p class="lang-ht" style="display:none;">Vizite: <a href="https://www.granbwa.com" target="_blank">www.granbwa.com</a></p>
+</section>
+
+<footer>
+    <p class="lang-fr">&copy; 2025 Domaine Granbwa. Tous droits réservés.</p>
+    <p class="lang-en" style="display:none;">&copy; 2025 Domaine Granbwa. All rights reserved.</p>
+    <p class="lang-ht" style="display:none;">&copy; 2025 Domaine Granbwa. Tout dwa rezève.</p>
+</footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -10,13 +227,10 @@
 
         function showLanguage(lang) {
             langElements.forEach(element => {
-                element.style.transition = 'opacity 0.3s ease';
                 if (element.classList.contains(`lang-${lang}`)) {
                     element.style.display = 'block';
-                    element.style.opacity = '1';
                 } else {
                     element.style.display = 'none';
-                    element.style.opacity = '0';
                 }
             });
 
@@ -44,3 +258,6 @@
         showLanguage(currentLang); // Initialize with French content
     });
 </script>
+
+</body>
+</html>

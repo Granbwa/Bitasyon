@@ -1,85 +1,263 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granbwa - Executive en Construction</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js" defer></script>
+    <meta name="description" content="Casseus Denis offers professional construction and property management services, with an emphasis on tailored solutions for clients.">
+    <title>Casseus Denis - Executive Construction & Property Management Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f1f3; /* Light gray background */
+            color: #2e2e2e; /* Dark gray text */
+        }
+
+        header {
+            background-color: #1c1c1e; /* Dark luxury color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #f1c40f; /* Gold color for luxury */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin: 40px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1c1c1e; /* Dark gray for titles */
+        }
+
+        /* Services Section */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #ffffff; /* White background for cards */
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2e2e2e; /* Dark gray text for service titles */
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #7f8c8d; /* Lighter gray text for descriptions */
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-info a {
+            color: #1c87c9; /* Light blue for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c1e; /* Dark footer color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 768px) {
+            .services-list {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .service {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
+<body>
 
-<body class="is-preload">
+<header>
+    <h1>Casseus Denis</h1>
+    <p class="lang-fr">Votre partenaire de confiance en gestion de construction et en supervision de propriétés</p>
+    <p class="lang-en" style="display:none;">Your trusted partner in construction management and property oversight</p>
+    <p class="lang-ht" style="display:none;">Patnè ou fè konfyans nan jesyon konstriksyon ak siveyans pwopriyete</p>
+    <div class="language-toggle">
+        <button id="lang-toggle">Fr | Kreyol</button>
+    </div>
+</header>
 
-    <!-- Header -->
-    <header id="header" class="alt">
-        <nav>
-            <ul>
-                <li><a href="#home" class="lang-home">Accueil</a></li>
-                <li><a href="#about" class="lang-about">À propos</a></li>
-                <li><a href="#services" class="lang-services">Services</a></li>
-                <li><a href="#contact" class="lang-contact">Contact</a></li>
-                <li><a href="#" id="lang-toggle" class="lang-toggle">Fr | En</a></li>
-            </ul>
-        </nav>
-        <h1 class="lang-header">Granbwa</h1>
-        <p class="lang-tagline">Votre partenaire de confiance en gestion de construction et de propriété.</p>
-    </header>
+<section>
+    <h2 class="lang-fr">Nos Services</h2>
+    <h2 class="lang-en" style="display:none;">Our Services</h2>
+    <h2 class="lang-ht" style="display:none;">Sèvis Nou Ofri</h2>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="container">
-                <h2 class="lang-welcome">Bienvenue chez Granbwa</h2>
-                <p class="lang-home-description">Granbwa fonctionne avec précision, garantissant un service de qualité dans la gestion de propriété. Nous intégrons l'expérience de la construction avec des opérations stratégiques pour offrir des solutions personnalisées de gestion de propriété adaptées aux besoins uniques de chaque client.</p>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="lang-about-header">À propos de nous</h2>
-                <p class="lang-about-description">Granbwa a été fondée sur un engagement à fournir une gestion de propriété de qualité militaire. Nous nous spécialisons dans la collaboration avec les propriétaires de biens et les investisseurs pour offrir des solutions innovantes visant à maximiser la valeur des propriétés tout en maintenant les plus hauts standards de qualité et de sécurité.</p>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <div class="container">
-                <h2 class="lang-services-header">Nos services</h2>
-                <ul>
-                    <li class="lang-service-item"><strong>Gestion de propriété :</strong> Gestion professionnelle pour les propriétés résidentielles, commerciales et industrielles, garantissant efficacité et rentabilité.</li>
-                    <li class="lang-service-item"><strong>Gestion de construction :</strong> Gestion complète des projets de construction, de la planification à l'exécution, garantissant la livraison dans les délais et le respect du budget.</li>
-                    <li class="lang-service-item"><strong>Maintenance des installations :</strong> Services de maintenance continus pour garantir que vos propriétés sont toujours en parfait état, réduisant ainsi les coûts de réparation.</li>
-                    <li class="lang-service-item"><strong>Solutions de sécurité :</strong> Services de sécurité intégrés pour tous types de propriétés, de la surveillance vidéo à la sécurité sur site, garantissant une sécurité maximale.</li>
-                    <li class="lang-service-item"><strong>Relations avec les locataires :</strong> Nous gérons les communications avec les locataires, les négociations de baux et la résolution des conflits, garantissant à la fois la satisfaction des locataires et la rentabilité des propriétaires.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="lang-contact-header">Contactez-nous</h2>
-                <p class="lang-contact-description">Si vous avez des questions, ou si vous souhaitez en savoir plus sur la manière dont Granbwa peut vous assister, n'hésitez pas à nous contacter :</p>
-                <p>Email: <a href="mailto:info@granbwa.com" class="lang-email">info@granbwa.com</a></p>
-                <p>Téléphone: <span class="lang-phone">+1-234-567-890</span></p>
-                <p>Adresse: <span class="lang-address">1234 Granbwa Street, Ville, Pays</span></p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <p class="lang-footer">&copy; 2025 Granbwa. Tous droits réservés.</p>
+    <div class="services-list">
+        <div class="service">
+            <h3 class="lang-fr">Gestion de Propriété</h3>
+            <h3 class="lang-en" style="display:none;">Property Management</h3>
+            <h3 class="lang-ht" style="display:none;">Jesyon Pwopriyete</h3>
+            <p class="lang-fr">Gestion de propriétés résidentielles, commerciales et industrielles, adaptée à vos besoins.</p>
+            <p class="lang-en" style="display:none;">Residential, commercial, and industrial property management tailored to your needs.</p>
+            <p class="lang-ht" style="display:none;">Jesyon pwopriyete rezidansyèl, komèsyal, ak endistriyèl, adapte a bezwen ou yo.</p>
         </div>
-    </footer>
+        <div class="service">
+            <h3 class="lang-fr">Gestion de la Construction</h3>
+            <h3 class="lang-en" style="display:none;">Construction Management</h3>
+            <h3 class="lang-ht" style="display:none;">Jesyon Konstriksyon</h3>
+            <p class="lang-fr">Gestion complète des projets de construction, de la planification à l'exécution.</p>
+            <p class="lang-en" style="display:none;">Comprehensive construction project management from start to finish.</p>
+            <p class="lang-ht" style="display:none;">Jesyon pwojè konstriksyon soti nan kòmansman jouk nan fen.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Métiers Spécialisés</h3>
+            <h3 class="lang-en" style="display:none;">Specialized Trades</h3>
+            <h3 class="lang-ht" style="display:none;">Metye Espesyalize</h3>
+            <p class="lang-fr">Expertise en menuiserie, maçonnerie, électricité, plomberie, CVC, et plus encore.</p>
+            <p class="lang-en" style="display:none;">Expert carpentry, masonry, electrical, plumbing, HVAC, and more.</p>
+            <p class="lang-ht" style="display:none;">Ekspètiz nan travay bwa, maçonnerie, elektrik, plonbri, HVAC, ak plis.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Solutions de Sécurité</h3>
+            <h3 class="lang-en" style="display:none;">Security Solutions</h3>
+            <h3 class="lang-ht" style="display:none;">Solisyon Sekirite</h3>
+            <p class="lang-fr">Systèmes de sécurité intégrés et personnel sur site pour garantir la sécurité.</p>
+            <p class="lang-en" style="display:none;">Integrated security systems and on-site personnel to ensure safety.</p>
+            <p class="lang-ht" style="display:none;">Sistèm sekirite entegre ak pèsonèl sou plas pou asire sekirite.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Relations avec les Locataires</h3>
+            <h3 class="lang-en" style="display:none;">Tenant Relations</h3>
+            <h3 class="lang-ht" style="display:none;">Relasyon Lokatè</h3>
+            <p class="lang-fr">Gestion des communications avec les locataires, des négociations de baux et de la résolution des conflits.</p>
+            <p class="lang-en" style="display:none;">Manage tenant communications, lease negotiations, and conflict resolution.</p>
+            <p class="lang-ht" style="display:none;">Jere kominikasyon lokatè, negosyasyon kontra lokasyon, ak rezolisyon konfli.</p>
+        </div>
+        <div class="service">
+            <h3 class="lang-fr">Services d'Urgence</h3>
+            <h3 class="lang-en" style="display:none;">Emergency Services</h3>
+            <h3 class="lang-ht" style="display:none;">Sèvis Ijans</h3>
+            <p class="lang-fr">Réponse 24h/24 et 7j/7 pour les problèmes urgents liés à la propriété, tels que les dommages structurels, etc.</p>
+            <p class="lang-en" style="display:none;">24/7 response for urgent property issues like structural damage and more.</p>
+            <p class="lang-ht" style="display:none;">Repons 24/7 pou pwoblèm ijans pwopriyete tankou domaj estriktirèl ak plis.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2 class="lang-fr">Contactez-nous</h2>
+    <h2 class="lang-en" style="display:none;">Contact Us</h2>
+    <h2 class="lang-ht" style="display:none;">Kontakte nou</h2>
+
+    <p class="lang-fr">Email: <a href="mailto:co@casseusdenis.com">co@casseusdenis.com</a></p>
+    <p class="lang-en" style="display:none;">Email: <a href="mailto:co@casseusdenis.com">co@casseusdenis.com</a></p>
+    <p class="lang-ht" style="display:none;">Email: <a href="mailto:co@casseusdenis.com">co@casseusdenis.com</a></p>
+
+    <p class="lang-fr">Téléphone: +1-263-588-7060</p>
+    <p class="lang-en" style="display:none;">Phone: +1-263-588-7060</p>
+    <p class="lang-ht" style="display:none;">Telefòn: +1-263-588-7060</p>
+
+    <p class="lang-fr">Visitez: <a href="https://casseusdenis.com" target="_blank">casseusdenis.com</a></p>
+    <p class="lang-en" style="display:none;">Visit: <a href="https://casseusdenis.com" target="_blank">casseusdenis.com</a></p>
+    <p class="lang-ht" style="display:none;">Vizite: <a href="https://casseusdenis.com" target="_blank">casseusdenis.com</a></p>
+</section>
+
+<footer>
+    <p class="lang-fr">&copy; 2025 Casseus Denis. Tous droits réservés.</p>
+    <p class="lang-en" style="display:none;">&copy; 2025 Casseus Denis. All rights reserved.</p>
+    <p class="lang-ht" style="display:none;">&copy; 2025 Casseus Denis. Tout dwa rezève.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const langToggle = document.getElementById('lang-toggle');
+        const langElements = document.querySelectorAll('[class^="lang-"]');
+        let currentLang = 'fr'; // Default language is French
+
+        function showLanguage(lang) {
+            langElements.forEach(element => {
+                if (element.classList.contains(`lang-${lang}`)) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+
+            // Update button text
+            if (lang === 'fr') {
+                langToggle.textContent = 'En | Kreyol';
+            } else if (lang === 'en') {
+                langToggle.textContent = 'Fr | Kreyol';
+            } else {
+                langToggle.textContent = 'Fr | En';
+            }
+        }
+
+        langToggle.addEventListener('click', function() {
+            if (currentLang === 'fr') {
+                currentLang = 'en';
+            } else if (currentLang === 'en') {
+                currentLang = 'ht';
+            } else {
+                currentLang = 'fr';
+            }
+            showLanguage(currentLang);
+        });
+
+        showLanguage(currentLang); // Initialize with French content
+    });
+</script>
 
 </body>
-
 </html>
